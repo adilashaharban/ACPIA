@@ -1,0 +1,13 @@
+Format the output strictly as a JSON object with:
+"findings": list of finding blocks containing:
+  - finding_id: string
+  - title: string
+  - description: string
+  - finding_type: one of ["CORRELATION", "INCONSISTENCY", "TIMELINE_GAP", "FACTUAL_OBSERVATION", "CONCLUSION"]
+  - finding_status: one of ["SUPPORTED", "PARTIALLY_SUPPORTED", "INSUFFICIENT_EVIDENCE", "CONTRADICTED"]
+  - citations: list of citation items containing:
+      - evidence_id: string
+      - chunk_id: string
+      - retrieval_rank: int
+"contradictions": list of contradiction items
+"evidence_gaps": list of evidence gap items

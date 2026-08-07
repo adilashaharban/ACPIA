@@ -1,0 +1,16 @@
+Investigator Question: {query}
+
+Retrieved context:
+{context}
+
+Entities:
+{entities}
+
+Timeline:
+{timeline}
+
+Knowledge Graph:
+{graph}
+
+Correlation Clusters:
+{correlation}
